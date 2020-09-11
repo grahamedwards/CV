@@ -1,312 +1,264 @@
- % !TEX TS-program = arara
- % arara: pdflatex
- % arara: pdflatex { synctex: true }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Long Professional Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.latextemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
+% Long Curriculum Vitae
+% By Graham Harper Edwards
+% Adapted from http://www.rpi.edu/dept/arc/training/latex/resumes/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-\let\latexnofiles\nofiles % turn off \nofiles so that the \etaremune function works.
-\let\nofiles\relax
+%-------------------------------------------
+%	PACKAGES & CONFIGURATIONS
+%-------------------------------------------
 
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[10pt]{article}
+\usepackage{geometry}\geometry{letterpaper,margin=1in}
 
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{etaremune}
+
+\usepackage{enumitem}
+	\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=5ex}
 
 \usepackage{hyperref} \usepackage[dvipsnames]{xcolor} \definecolor{linkcolor}{rgb}{0.0, 0.25, 0.42} \hypersetup{colorlinks=true, urlcolor=linkcolor}
 	%set link color to a lovely indigo dye.
-\usepackage{hanging}
 
-\newsectionwidth{0pt} % Stops section indenting
+\usepackage{hanging} % Hanging paragraphs for minor lists.
 
 \usepackage{fancyhdr} \usepackage{lastpage}
     \renewcommand{\headrulewidth}{0pt}
     \cfoot{G.H. Edwards \hspace{8pt}  \thepage \hspace{1pt} / \pageref*{LastPage}}
     \pagestyle{fancy}
 
-\usepackage{setspace}
+\usepackage{titlesec}
+	\titleformat*{\section}{\centering\bfseries}
+	\titleformat*{\subsection}{\normalsize}
+	\titlespacing*{\subsection}{0ex}{2ex}{.2ex}
 
 \renewcommand\labelitemi{\boldmath$\cdot$}
 
-%\pagestyle{plain}
+\setlength{\parindent}{0pt}
+
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND ADDRESS(ES) SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
+%	NAME, ADDRESS, INFO
+%-------------------------------------------
 
-\name{Graham Harper Edwards\\ \hline \\} % Your name at the top
+%Name
+\begingroup
+\centering \LARGE \textbf{\underline{Graham Harper Edwards}} \\ [1em]
+\endgroup
 
-% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
+% Address and Info
+Earth \& Planetary Sciences \\
+University of California Santa Cruz \hfill \textit{Email:} ghedwards@ucsc.edu \\
+1156 High Street EMS A232 \hfill \textit{Phone:} 1.920.559.2279 \\
+Santa Cruz, CA 95060 U.S.A.	\hfill \textit{Website:} \href{https://grahamedwards.github.io}{grahamedwards.github.io}
 
-\address{ Earth \& Planetary Sciences \\ University of California Santa Cruz \\ 1156 High Street EMS A232 \\ Santa Cruz, CA 95060 U.S.A.} % Your address 1
-
-\address{\\ \textit{Email:} ghedwards@ucsc.edu \\ \textit{Phone:} 1.920.559.2279 \\ \textit{Website:} \href{https://grahamedwards.github.io}{grahamedwards.github.io}}
-	% 2nd Column
-
-%----------------------------------------------------------------------------------------
-
-\begin{resume}
-\vspace{0.8cm}
-%----------------------------------------------------------------------------------------
-%	STATEMENT  SECTION
-%----------------------------------------------------------------------------------------
+\vspace{2ex}
+%-------------------------------------------
+%	STATEMENT
+%-------------------------------------------
 \iffalse
 \section{STATEMENT}
-\vspace{8pt} % Gap between title and text
 
-I am a geochemist and geochronologist: my primary research interest is to resolve and refine timescales of Earth and solar system processes via radiometric records. My doctoral research has focused on the application of the uranium decay systems to uncover the tempos of high-temperature processes in deep time and subglacial processes in the Quaternary. In my future work, I am excited to hone my statistical techniques to apply to database studies of meteorite chemistries.\
+\textbf{Research} \ I am a geochemist and geochronologist: my primary research interest is to resolve and refine timescales of Earth and solar system processes via radiometric records. My doctoral research has focused on the application of the uranium decay systems to uncover the tempos of high-temperature processes in deep time and subglacial processes in the Quaternary. In my future work, I am excited to hone my statistical techniques to apply to database studies of meteorite chemistries.
 
-In addition to my research interests, I am dually committed to the inclusion, support, and retention of individuals and groups of diverse identities and backgrounds. \
-
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
+In addition to my research interests, I am dually committed to the inclusion, support, and retention of individuals and groups of diverse identities and backgrounds.
 \fi
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
 
-\section{\centerline{EDUCATION}}
+%-------------------------------------------
+%	EDUCATION
+%-------------------------------------------
 
-\vspace{4pt} % Gap between title and text
+\section*{EDUCATION}
 
-{\bf University of California Santa Cruz} \hfill 2016 – Present \\
-{\sl Doctoral Studies}, Earth \& Planetary Sciences\\
+\subsection*{\textbf{University of California Santa Cruz} \hfill 2016 – Present}
+\textit{Doctoral Studies}: Earth \& Planetary Sciences\\
 Candidacy Fall 2018 \\
-\emph{Proposed Dissertation Title}: Applications of the uranium decay chain to diverse problems in deep time and Quaternary studies: chronologic insights into processes of planetary interiors and the bases of glaciers.\\
-\emph{Advisor}: Prof. Terrence Blackburn\\
-\emph{Committee}: Profs. Slawek Tulaczyk ({\sl Chair}, UCSC), Myriam Telus (UCSC), Kurt Cuffey (UC Berkeley)
+\textit{Proposed Dissertation Title}: Applications of the uranium decay chain to diverse problems in deep time and Quaternary studies: chronologic insights into processes of planetary interiors and the bases of glaciers.\\
+\textit{Advisor}: Prof. Terrence Blackburn\\
+\textit{Committee}: Profs. Slawek Tulaczyk ({\sl Chair}, UCSC), Myriam Telus (UCSC), Kurt Cuffey (UC Berkeley)
 
-\vspace{-4pt}
-{\bf Bowdoin College} \hspace{15pt} Brunswick, ME \hfill 2014\\
-{\sl Bachelor of Arts}: Earth and Oceanographic Science with Honors, Classics minor \\
-{\sl Summa cum Laude, $\Phi$BK Society}
+\subsection*{\textbf{Bowdoin College} \hspace{15pt} Brunswick, ME \hfill 2014}
+\textit{Bachelor of Arts}: Earth and Oceanographic Science with Honors, Classics minor \\
+\textit{Summa cum Laude, $\Phi$BK Society}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
+%	PUBLICATIONS
+%-------------------------------------------
 
-\section{\centerline{PUBLICATIONS}}
+\section*{PUBLICATIONS}
 
-\vspace{4pt} % Gap between title and text
-
-\begin{etaremune} [topsep=12pt, itemsep=4pt, itemindent= -12pt]
-  \item T. Blackburn, G.H. Edwards, S. Tulaczyk, M. Scudder, G. Piccione, B. Hallet, J.C. Zachos, B. Cheney, N. McLean, J.T. Babbe. \emph{In press}. Ice retreat in Wilkes Basin of East Antarctica during a warm interglacial. \emph{Nature} (583), 554-559. \href{https://doi.org/10.1038/s41586-020-2484-5}{doi: 10.1038/s41586-020-2484-5}. Press in \href{https://www.nationalgeographic.com/science/2020/07/east-antarctic-ice-sheet-more-vulnerable-to-melting-than-thought/}{National Geographic}.
-  \item G.H. Edwards, T. Blackburn. 2020. Accretion of a large LL parent planetesimal from a recently formed chondrule population. \emph{Science Advances} (6), eaay8641. \href{https://advances.sciencemag.org/content/6/16/eaay8641}{doi: 10.1126/sciadv.aay8641}
-  \item G.H. Edwards, T. Blackburn. 2018. Detecting the extent of ca. 1.1 Ga Midcontinent Rift plume heating using U-Pb thermochronology of the lower crust. \emph{Geology} (46), 911–914. \href{https://doi.org/10.1130/G45150.1}{doi: 10.1130/G45150.1}
-  \item G.H. Edwards. 2014. Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a study of Late Holocene cirque glacier activity in Spitsbergen, Svalbard. [\emph{Honor’s Thesis}] Bowdoin College: Brunswick, ME, U.S.A. 73 p. \href{https://digitalcommons.bowdoin.edu/honorsprojects/12/}{[Undergraduate Research Commons]}
+\begin{etaremune} [itemsep=4pt, leftmargin=3ex]
+  \item T. Blackburn, G.H. Edwards, S. Tulaczyk, M. Scudder, G. Piccione, B. Hallet, J.C. Zachos, B. Cheney, N. McLean, J.T. Babbe. 2020. Ice retreat in Wilkes Basin of East Antarctica during a warm interglacial. \textit{Nature} (583), 554-559. \href{https://doi.org/10.1038/s41586-020-2484-5}{doi: 10.1038/s41586-020-2484-5}. \textbf{Press:} \href{https://www.nationalgeographic.com/science/2020/07/east-antarctic-ice-sheet-more-vulnerable-to-melting-than-thought/}{National Geographic}.
+  \item G.H. Edwards, T. Blackburn. 2020. Accretion of a large LL parent planetesimal from a recently formed chondrule population. \textit{Science Advances} (6), eaay8641. \href{https://advances.sciencemag.org/content/6/16/eaay8641}{doi: 10.1126/sciadv.aay8641}
+  \item G.H. Edwards, T. Blackburn. 2018. Detecting the extent of ca. 1.1 Ga Midcontinent Rift plume heating using U-Pb thermochronology of the lower crust. \textit{Geology} (46), 911–914. \href{https://doi.org/10.1130/G45150.1}{doi: 10.1130/G45150.1}
+  \item G.H. Edwards. 2014. Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a study of Late Holocene cirque glacier activity in Spitsbergen, Svalbard. [\textit{Honor’s Thesis}] Bowdoin College: Brunswick, ME, U.S.A. 73 pp. \href{https://digitalcommons.bowdoin.edu/honorsprojects/12/}{[Undergraduate Research Commons]}
 \end{etaremune}
-\vspace{-12pt}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	TEACHING SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
+%	TEACHING
+%-------------------------------------------
 
-\section{\centerline{TEACHING}}
+\section*{TEACHING}
 
-\vspace{4pt} % Gap between title and text
-{\bf University of California Santa Cruz}\\
-\emph{Graduate Teaching Assistant}
+\subsection*{\textbf{University of California Santa Cruz}}
+\textit{Graduate Teaching Assistant}
+\begin{tabbing} \hspace{10pt} \= \hspace{2.5cm} \=  \kill
 
-\vspace{-18pt} \begin{tabbing} \hspace{12pt} \= \hspace{2.5cm} \=  \kill
-
-\> Fall 2019 \> \emph{Elements of Field Geology}\\
-\> Spring 2018 \>  \emph{Geochemistry of the Solar System}\\
-\> Winter 2018 \> \emph{Geologic Principles}
+\> Fall 2020 \> \textit{Evolution of Earth}\\
+\> Fall 2019 \> \textit{Elements of Field Geology}\\
+\> Spring 2018 \>  \textit{Geochemistry of the Solar System}\\
+\> Winter 2018 \> \textit{Geologic Principles}
 
 \end{tabbing}
-\vspace{-12pt}
 
-{\bf Bozeman \& Livingston Public Schools} \hspace{15pt} MT, U.S.A. \hfill 2015 \\
-\emph{Substitute Teacher}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Instructor and paraprofessional in K-12 classrooms.
-\item Taught students with various educational needs in diverse subjects.
-\end{itemize}
-\vspace{-6pt}
-
-{\bf Bowdoin College} \hspace{15pt} Brunswick, ME, U.S.A. \hfill 2012 – 2013 \\
-\emph{Laboratory Teaching Assistant}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Assisted coordination and instruction of field and laboratory activities for an introductory geoscience course.
+\subsection*{\textbf{Bozeman \& Livingston Public Schools} \hspace{15pt} MT, U.S.A. \hfill 2015}
+\textit{Substitute Teacher}
+\begin{itemize}
+	\item Instructor and paraprofessional in K-12 classrooms.
+	\item Taught students with various educational needs in diverse subjects.
 \end{itemize}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
+\subsection*{\textbf{Bowdoin College} \hspace{15pt} Brunswick, ME, U.S.A. \hfill 2012 – 2013}
+\textit{Laboratory Teaching Assistant}
+\begin{itemize}
+	\item Assisted instruction of field and laboratory activities for an introductory geoscience course.
+\end{itemize}
+
+%-------------------------------------------
 %	OUTREACH SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
 
-\section{\centerline{OUTREACH \& PUBLIC SERVICE}}
+\section*{OUTREACH \& PUBLIC SERVICE}
 
-\vspace{4pt} % Gap between title and text
-{\bf Santa Cruz Museum of Natural History} \hfill 2018 – Present\\
-\emph{Volunteer Scientist}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Create educational content and host geoscience educational activities at monthly museum events.
-\item During covid-19 pandemic shelter-in-place orders, prepared and performed in weekly educational video streams covering geoscience topics. Archived \emph{Rockin' Pop-Up} videos are available \href{https://www.santacruzmuseum.org/category/rockin-pop-up/}{here}.
-\end{itemize}
-\vspace{-6pt}
-
-{\bf Geoscientists Encouraging Openness and Diversity in the Earth Sciences} \hfill 2019 – 2020\\
-{\bf (GEODES)} \hspace{3pt} \emph{Student Leader}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Organize and implement outreach events centered on promoting awareness of issues facing underrepresented groups in the geosciences and cultivating a culture of inclusivity in the UCSC Dept. of Earth \& Planetary Sciences.
-\item One of six graduate student leaders responsible for the operation and development of GEODES.
-\end{itemize}
-\vspace{-6pt}
-
-{\bf Skype a Scientist} \hfill 2019 – 2020\\
-\emph{Volunteer Scientist}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Prepare educational content and host video calls with elementary classrooms.
-\item Teach geoscience concepts and share stories about experiences as a scientist.
-\end{itemize}
-\vspace{-6pt}
-
-{\bf Peary-MacMillan Arctic Museum} \hspace{15pt} Brunswick, ME, U.S.A. \hfill 2015 – 2016\\
-\emph{Curatorial Intern}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Developed outreach programming and exhibition content.
-\item Supplemented undergraduate courses with lectures drawing on museum collections.
-\item Mentored and trained undergraduate student interns and employees.
+\subsection*{\textbf{Santa Cruz Museum of Natural History} \hfill 2018 – Present}
+\textit{Volunteer Scientist}
+\begin{itemize}
+	\item Create educational content and host geoscience educational activities at monthly museum events.
+	\item During covid-19 pandemic shelter-in-place orders, prepared and performed in weekly educational video streams covering geoscience topics. Archived \emph{Rockin' Pop-Up} videos are available \href{https://www.santacruzmuseum.org/category/rockin-pop-up/}{here}.
 \end{itemize}
 
-{\bf Museum of the Rockies} \hspace{15pt} Bozeman, MT, U.S.A. \hfill 2015\\
-\emph{Security Volunteer}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Enforced museum rules as an introductory volunteer (docents required multi-year training).
-\item I dedicated the bulk of my time to answering visitors' questions and facilitating interpretive discussions about natural history exhibits.
+\subsection*{\textbf{Geoscientists Encouraging Openness and Diversity in the Earth Sciences} \hfill 2019 – 2020}
+\textbf{(GEODES)} \hspace{3pt} \textit{Student Leader}
+\begin{itemize}
+	\item Organize and implement outreach events centered on promoting awareness of issues facing underrepresented groups in the geosciences and cultivating a culture of inclusivity in the UCSC Earth \& Planetary Sciences Dept.
+	\item One of six graduate student leaders responsible for the operation and development of GEODES.
 \end{itemize}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	AWARDS & HONORS SECTION
-%----------------------------------------------------------------------------------------
+\subsection*{\textbf{Skype a Scientist} \hfill 2019 – 2020}
+\textit{Volunteer Scientist}
+\begin{itemize}
+	\item Prepare educational content and host video calls with elementary classrooms.
+	\item Teach geoscience concepts and share stories about experiences as a scientist.
+\end{itemize}
 
-\section{\centerline{AWARDS \& HONORS}}
+\subsection*{\textbf{Peary-MacMillan Arctic Museum} \hspace{15pt} Brunswick, ME, U.S.A. \hfill 2015 – 2016}
+\textit{Curatorial Intern}
+\begin{itemize}
+	\item Developed outreach programming and exhibition content.
+	\item Supplemented undergraduate courses with lectures drawing on museum collections.
+	\item Mentored and trained undergraduate student interns and employees.
+\end{itemize}
 
-\vspace{4pt} % Gap between title and text
+\subsection*{\textbf{Museum of the Rockies} \hspace{15pt} Bozeman, MT, U.S.A. \hfill 2015}
+\textit{Security Volunteer}
+\begin{itemize}
+	\item Answered visitors' questions and facilitating interpretive discussions about natural history exhibits.
+	\item Enforced museum rules as an introductory volunteer (docents required multi-year training).
+\end{itemize}
 
-\begin{spacing}{1.3}
-ARCS Foundation Scholar Award (Fellowship) \hfill 2020 – 2021\\
-UCSC Earth \& Planetary Sciences Outstanding TA Award (Honorable Mention) \hfill 2020\\
-Aaron and Elizabeth Waters Award  \hfill 2019
+%-------------------------------------------
+%	AWARDS & HONORS
+%-------------------------------------------
 
-	\begingroup\par \vspace{-12pt} \leftskip12pt\rightskip5cm \begin{spacing}{1}
-	\emph{\small Issued annually for the most outstanding proposal for PhD research in the UCSC Earth \& Planetary Sciences Dept.}
-	\end{spacing}\par\endgroup
-	\vspace{-8pt} %recoup space from paragraph
+\section*{AWARDS \& HONORS}
 
-UC Santa Cruz Regent’s Fellowship \hfill 2016 – 2017\\
-National Association of Geoscience Teachers Outstanding TA Award \hfill 2014\\
-Sarah and James Bowdoin Scholar (Dean’s List) \hfill 2011 – 2013\\
-Grua/O’Connell Research Award  \hfill 2013\\
-Freedman Summer Research Fellowship in Coastal/Environmental Studies \hfill 2012
-\end{spacing}
+\begin{itemize} [leftmargin=0pt,label={},itemsep=1ex]
+	\item ARCS Foundation Scholar Award (Fellowship) \hfill 2020 – 2021
+	\item UCSC Earth \& Planetary Sciences Outstanding TA Award (Honorable Mention) \hfill 2020
+	\item Aaron and Elizabeth Waters Award  \hfill 2019
+	\begin{itemize} [label={}, rightmargin=30ex]
+	\item \textit{Issued annually for the most outstanding proposal for PhD research in the UCSC Earth \& Planetary Sciences Dept.}
+	\end{itemize}
+	\item UC Santa Cruz Regent’s Fellowship \hfill 2016 – 2017
+	\item National Association of Geoscience Teachers Outstanding TA Award \hfill 2014
+	\item Sarah and James Bowdoin Scholar (Dean’s List) \hfill 2011 – 2013
+	\item Grua/O’Connell Research Award  \hfill 2013
+	\item Freedman Summer Research Fellowship in Coastal/Environmental Studies \hfill 2012
+\end{itemize}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	CONFERENCE TALK/POSTER SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
+%	CONFERENCE TALK/POSTER
+%-------------------------------------------
 
-\section{\centerline{CONFERENCE ABSTRACTS (1\textsuperscript{\tiny{ST}} AUTHOR)}}
+\section*{CONFERENCE ABSTRACTS (1\textsuperscript{\tiny{ST}} AUTHOR)}
 
-\vspace{4pt} % Gap between title and text
-\begin{center} A comprehensive list of abstracts is available on \href{https://scholar.google.com/citations?user=KHLOvgcAAAAJ&hl=en}{Google Scholar}. \end{center}
-\begin{etaremune} [topsep=12pt, itemsep=4pt, itemindent= -12pt]
-  \item G.H. Edwards, T. Blackburn, S. Tulaczyk, G.G. Piccione. 2019. [Poster]: U-series isotopics of silts from Taylor Valley, Antarctica: Applying comminution dating methods on polar desert tills and implications for the timeframe of valley incision. \emph{American Geophysical Union Fall Meeting}, San Francisco, CA, U.S.A.
-  \item  G.H. Edwards, T. Blackburn, S. Tulaczyk, G.G. Piccione. 2019. [Poster]: U-Series isotopics constrain timescale of bedrock comminution and glacial incision in Taylor Valley, Antarctica. \emph{Goldschmidt Annual Meeting}, Barcelona, ES.
-	\item  G.H. Edwards, T. Blackburn, G.G. Piccione. 2018. [Talk]: Cooling and disruption of the LL chondrite parent body. \emph{Lunar and Small Bodies Graduate Forum (LunGradCon)}, Mountain View, CA, U.S.A.
-  \item  G.H. Edwards, T. Blackburn, C.M.O’D. Alexander. 2017. [Talk]: Accretion and disruption histories of the ordinary chondrite parent bodies. \emph{Meteoritical Society Annual Meeting}, Santa Fe, NM, U.S.A.
-  \item G.H. Edwards, T. Blackburn, K.V. Smit. 2017. [Poster]: Timescales of crustal cooling of the Superior Craton near Attawapiskat, Ontario, Canada, and implications for extent of Keweenawan plume heating. \emph{American Geophysical Union Fall Meeting}, New Orleans, LA, U.S.A.
-  \item G.H. Edwards. 2014. [Poster]: Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a provenance study of Late Holocene cirque glacier activity in Linnédalen, Spitsbergen, Svalbard. \emph{44th International Arctic Workshop}, Boulder, CO, U.S.A.
+\begin{center} A more comprehensive list of co-authored abstracts is available on \href{https://scholar.google.com/citations?user=KHLOvgcAAAAJ&hl=en}{Google Scholar}. \end{center}
+
+\begin{etaremune} [itemsep=4pt, leftmargin=3ex]
+  \item G.H. Edwards, T. Blackburn, S. Tulaczyk, G.G. Piccione. 2019. [Poster]: U-series isotopics of silts from Taylor Valley, Antarctica: Applying comminution dating methods on polar desert tills and implications for the timeframe of valley incision. \textit{American Geophysical Union Fall Meeting}, San Francisco, CA, U.S.A.
+  \item  G.H. Edwards, T. Blackburn, S. Tulaczyk, G.G. Piccione. 2019. [Poster]: U-Series isotopics constrain timescale of bedrock comminution and glacial incision in Taylor Valley, Antarctica. \textit{Goldschmidt Annual Meeting}, Barcelona, ES.
+	\item  G.H. Edwards, T. Blackburn, G.G. Piccione. 2018. [Talk]: Cooling and disruption of the LL chondrite parent body. \textit{Lunar and Small Bodies Graduate Forum (LunGradCon)}, Mountain View, CA, U.S.A.
+  \item  G.H. Edwards, T. Blackburn, C.M.O’D. Alexander. 2017. [Talk]: Accretion and disruption histories of the ordinary chondrite parent bodies. \textit{Meteoritical Society Annual Meeting}, Santa Fe, NM, U.S.A.
+  \item G.H. Edwards, T. Blackburn, K.V. Smit. 2017. [Poster]: Timescales of crustal cooling of the Superior Craton near Attawapiskat, Ontario, Canada, and implications for extent of Keweenawan plume heating. \textit{American Geophysical Union Fall Meeting}, New Orleans, LA, U.S.A.
+  \item G.H. Edwards. 2014. [Poster]: Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a provenance study of Late Holocene cirque glacier activity in Linnédalen, Spitsbergen, Svalbard. \textit{44th International Arctic Workshop}, Boulder, CO, U.S.A.
 \end{etaremune}
 \vspace{-12pt}
 
-%----------------------------------------------------------------------------------------
-\vspace{0.2cm} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL  SERVICES, EXPERIENCES SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------
+%	ADDITIONAL SERVICES, EXPERIENCES
+%-------------------------------------------
 
-\section{\centerline{ACADEMIC SERVICE, EXPERIENCE}}
+\section*{ACADEMIC SERVICE, EXPERIENCE}
 
-\vspace{4pt} % Gap between title and text
-
-{\bf Reviewer for}: \emph{Geochronology}
-\vspace{-6pt}
-
-\textbf{Mentored Undergraduates}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Paul Colosi (2017-2018)
-\item Alexander Levinson (2018)
-\item Michael Scudder (2018-2020), thesis (2020)
-\item Linh Phan (2020)
-\item Cosmo Varah-Sikes, (2019-2020), planned thesis (2021)
+\subsection*{\textbf{Mentored Undergraduates}}
+\begin{itemize}
+		\item Cosmo Varah-Sikes, (2019-2020), planned thesis (2021)
+		\item Linh Phan (2020)
+		\item Michael Scudder (2018-2020), thesis (2020)
+		\item Alexander Levinson (2018)
+		\item Paul Colosi (2017-2018)
 \end{itemize}
-\vspace{-6pt}
 
-\textbf{Conference Sessions}
-\begin{itemize} \itemsep -2pt % Reduce space between items\hfill 2017\\
-\item 2017 AGU Fall Meeting $|$ Co-Chair/Co-Convener: \emph{Applications of Thermochronology to Understand Crustal Systems}
+\subsection*{\textbf{Conference Sessions}}
+\begin{itemize}
+	\item 2017 AGU Fall Meeting $|$ Co-Chair/Co-Convener: \textit{Applications of Thermochronology to Understand Crustal Systems}
 \end{itemize}
-\vspace{-6pt}
 
-\textbf{Seminars and Talks}\\
-\emph{Whole Earth Seminar Organizer}, Department of Earth \& Planetary Sciences, UCSC \hfill  Spring 2019
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item One of two graduate student organizers that coordinated a departmental seminar series.
-\item Contacted and scheduled speakers from diverse disciplines with in Earth and planetary sciences.
+\subsection*{\textbf{Seminars and Talks}}
+\textit{Whole Earth Seminar Organizer}, Department of Earth \& Planetary Sciences, UCSC \hfill  Spring 2019
+\begin{itemize}
+	\item One of two graduate student organizers that coordinated a departmental seminar series.
+	\item Contacted and scheduled speakers from diverse disciplines in Earth and planetary sciences.
 \end{itemize}
-\vspace{-6pt}
 
-\begin{hangparas}{.25in}{1}
-\textbf{Society Affiliations:} Geochemical Society, Geological Society of America, Meteoritical Society, American Geophysical Union.
+\vspace{2ex}
+\begin{hangparas}{5ex}{1}
+	\textbf{Reviewer for:} \textit{Geochronology}
+
+	\vspace{2ex}
+	\textbf{Society Affiliations:} Geochemical Society, Geological Society of America, Meteoritical Society, American Geophysical Union.
 \end{hangparas}
-\vspace{6pt}
 
-\centerline{\rule{2.5in}{0.5pt}}
+\begin{center}{\rule{2.5in}{0.5pt}}\end{center}
 
-\textbf{Analytical Experience:}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[] \emph{Expert:} TIMS
-\item[] \emph{Proficient:} MC-ICP-MS, ICP-MS, SEM EDS
-\item[] \emph{Limited:} ICP-OES, XRF, XRD
+\subsection*{\textbf{Analytical Experience}}
+\begin{itemize} [label={}]
+	\item \textit{Expert:} TIMS
+	\item \textit{Proficient:} MC-ICP-MS, ICP-MS, SEM-EDS
+	\item \textit{Limited:} ICP-OES, XRF, XRD
 \end{itemize}
 
-\begin{hangparas}{.25in}{1}
-\textbf{Additional Work Experience}:
-Server and Bartender (Trio Restaurant, Fish Creek, WI – 2014),
-Wildland Firefighter (USFS handcrew, Winthrop, WA – 2015).
 
-\textbf{Non-Academic Interests}: Rock climbing, cross-country skiing, birdwatching, bread, classical history and literature.
-\end{hangparas}
-%----------------------------------------------------------------------------------------
+\subsection*{\textbf{Additional Work Experience}}
+\begin{itemize}[label={}]
+	\item Server and Bartender --- Trio Restaurant, Fish Creek, WI --- 2014.
+	\item Wildland Firefighter --- USFS handcrew, Winthrop, WA --- 2015.
+\end{itemize}
 
-\end{resume}
+
+\subsection*{\textbf{Non-Academic Interests}} \hspace{5ex}
+ Rock climbing, cross-country skiing, birdwatching, breadmaking, classical history and literature.
+
+%-------------------------------------------
+%-------------------------------------------
 \end{document}
