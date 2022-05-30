@@ -28,8 +28,10 @@
 
 \usepackage{titlesec}
 	\titleformat*{\section}{\centering\bfseries}
-	\titleformat*{\subsection}{\normalsize}
+	\titleformat*{\subsection}{\normalsize} %NOT \bfseries for right-aligned timeframes
 	\titlespacing*{\subsection}{0ex}{2ex}{.2ex}
+	\titleformat*{\subsubsection}{\normalsize\itshape}
+	\titlespacing*{\subsubsection}{0ex}{1ex}{.2ex}
 
 \renewcommand\labelitemi{\boldmath$\cdot$}
 
@@ -55,17 +57,6 @@ Dartmouth College \hfill \textit{Email:} graham.h.edwards@dartmouth.edu \\
 Hanover, NH, 03755, U.S.A.	\hfill \textit{Website:} \href{https://grahamedwards.github.io}{grahamedwards.github.io}
 
 \vspace{2ex}
-%-------------------------------------------
-%	STATEMENT
-%-------------------------------------------
-\iffalse
-\section{STATEMENT}
-
-\textbf{Research} \ I am a geochemist and cosmochemistand geochronologist: my primary research interest is to resolve and refine timescales of Earth and solar system processes via radiometric records. My doctoral research has focused on the application of the uranium decay systems to uncover the tempos of high-temperature processes in deep time and subglacial processes in the Quaternary. In my future work, I am excited to hone my statistical techniques to apply to database studies of meteorite chemistries.
-
-In addition to my research interests, I am dually committed to the inclusion, support, and retention of individuals and groups of diverse identities and backgrounds.
-\fi
-
 
 %-------------------------------------------
 %	Appointments
@@ -77,10 +68,8 @@ In addition to my research interests, I am dually committed to the inclusion, su
 \begin{itemize}
 	\item[] Award \#\ 2102591
 	\item[] ``Planetesimal formation, giant planet migration, and stellar accretion in our solar system and beyond"
-	\item[] Advisors: Profs. C. Brenhin Keller (Earth Sciences) \&\ Elisabeth Newton (Physics \&\ Astronomy)
+	\item[] Advisors: Profs. C. Brenhin Keller (Earth Sciences) \&\ Elisabeth R. Newton (Physics \&\ Astronomy)
 \end{itemize}
-	
-
 
 %-------------------------------------------
 %	EDUCATION
@@ -104,10 +93,10 @@ In addition to my research interests, I am dually committed to the inclusion, su
 \section*{PUBLICATIONS}
 
 \begin{etaremune} [itemsep=4pt, leftmargin=3ex]
-  \item T. Blackburn, G.H. Edwards, S. Tulaczyk, M. Scudder, G. Piccione, B. Hallet, J.C. Zachos, B. Cheney, N. McLean, J.T. Babbe. 2020. Ice retreat in Wilkes Basin of East Antarctica during a warm interglacial. \textit{Nature} (583), 554-559. \href{https://doi.org/10.1038/s41586-020-2484-5}{doi: 10.1038/s41586-020-2484-5}. \textbf{Press:} \href{https://www.nationalgeographic.com/science/2020/07/east-antarctic-ice-sheet-more-vulnerable-to-melting-than-thought/}{National Geographic}.
-  \item G.H. Edwards, T. Blackburn. 2020. Accretion of a large LL parent planetesimal from a recently formed chondrule population. \textit{Science Advances} (6), eaay8641. \href{https://advances.sciencemag.org/content/6/16/eaay8641}{doi: 10.1126/sciadv.aay8641}
-  \item G.H. Edwards, T. Blackburn. 2018. Detecting the extent of ca. 1.1 Ga Midcontinent Rift plume heating using U-Pb thermochronology of the lower crust. \textit{Geology} (46), 911–914. \href{https://doi.org/10.1130/G45150.1}{doi: 10.1130/G45150.1}
-  \item G.H. Edwards. 2014. Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a study of Late Holocene cirque glacier activity in Spitsbergen, Svalbard. [\textit{Honor’s Thesis}] Bowdoin College: Brunswick, ME, U.S.A. 73 pp. \href{https://digitalcommons.bowdoin.edu/honorsprojects/12/}{[Undergraduate Research Commons]}
+\item G.H. Edwards, T. Blackburn, G. Piccione, S. Tulaczyk, G.H. Miller, C. Sikes. (\textit{in review}). Terrestrial evidence for ocean forcing of Heinrich events and subglacial hydrologic connectivity of the Laurentide Ice Sheet. \textit{Science Advances}.
+\item T. Blackburn, G.H. Edwards, S. Tulaczyk, M. Scudder, G. Piccione, B. Hallet, J.C. Zachos, B. Cheney, N. McLean, J.T. Babbe. 2020. Ice retreat in Wilkes Basin of East Antarctica during a warm interglacial. \textit{Nature} (583), 554-559. \href{https://doi.org/10.1038/s41586-020-2484-5}{doi: 10.1038/s41586-020-2484-5}. \textbf{Press:} \href{https://www.nationalgeographic.com/science/2020/07/east-antarctic-ice-sheet-more-vulnerable-to-melting-than-thought/}{National Geographic}.
+\item G.H. Edwards, T. Blackburn. 2020. Accretion of a large LL parent planetesimal from a recently formed chondrule population. \textit{Science Advances} (6), eaay8641. \href{https://advances.sciencemag.org/content/6/16/eaay8641}{doi: 10.1126/sciadv.aay8641}
+\item G.H. Edwards, T. Blackburn. 2018. Detecting the extent of ca. 1.1 Ga Midcontinent Rift plume heating using U-Pb thermochronology of the lower crust. \textit{Geology} (46), 911–914. \href{https://doi.org/10.1130/G45150.1}{doi: 10.1130/G45150.1} \item G.H. Edwards. 2014. Geochemical and stratigraphic analysis of the Linnévatnet sediment record: a study of Late Holocene cirque glacier activity in Spitsbergen, Svalbard. [\textit{Honor’s Thesis}] Bowdoin College: Brunswick, ME, U.S.A. 73 pp. \href{https://digitalcommons.bowdoin.edu/honorsprojects/12/}{[Undergraduate Research Commons]}
 \end{etaremune}
 
 %-------------------------------------------
@@ -119,13 +108,11 @@ In addition to my research interests, I am dually committed to the inclusion, su
 \subsection*{\textbf{University of California Santa Cruz}}
 \textit{Graduate Teaching Assistant}
 \begin{tabbing} \hspace{10pt} \= \hspace{2.5cm} \=  \kill
-
 \> Spring 2021 \> \textit{Radiogenic and Stable Isotopes}\\
 \> Fall 2020 \> \textit{Evolution of Earth}\\
 \> Fall 2019 \> \textit{Elements of Field Geology}\\
 \> Spring 2018 \>  \textit{Geochemistry of the Solar System}\\
 \> Winter 2018 \> \textit{Geologic Principles}
-
 \end{tabbing}
 
 \subsection*{\textbf{Bozeman \& Livingston Public Schools} \hspace{15pt} MT, U.S.A. \hfill 2015}
@@ -147,24 +134,34 @@ In addition to my research interests, I am dually committed to the inclusion, su
 
 \section*{OUTREACH \& PUBLIC SERVICE}
 
-\subsection*{\textbf{Santa Cruz Museum of Natural History} \hfill 2018 – Present}
+\subsection*{\textbf{Montshire Museum of Science} \hfill 2022}
+\textit{Guest Scientist}
+\begin{itemize}
+\item Lead and assist in educational activities within the museum.
+\item Explain Earth and planetary science concepts to pre-K through adult audiences.
+\item Develop programming focused on planetary science topics.
+\end{itemize}
+
+\subsection*{\textbf{Santa Cruz Museum of Natural History} \hfill 2018 – 2022}
 \textit{Volunteer Scientist}
 \begin{itemize}
 	\item Created educational content and hosted activities at monthly museum events.
-	\item I continue to co-host monthly educational video streams covering geoscience topics. Link: \href{https://www.santacruzmuseum.org/category/rockin-pop-up/}{\emph{Rockin' Pop-Up} Archives}.
+	\item Co-hosted monthly educational video streams covering geoscience topics. \\
+	Link: \href{https://www.santacruzmuseum.org/category/rockin-pop-up/}{\emph{Rockin' Pop-Up} Archives}.
 \end{itemize}
 
 \subsection*{\textbf{Skype a Scientist} \hfill 2019 – Present}
 \textit{Volunteer Scientist}
 \begin{itemize}
-	\item Prepare educational content and host video calls with elementary classrooms.
+	\item Prepare educational content and host video calls with elementary and secondary school classrooms.
 	\item Teach geoscience concepts and share stories about experiences as a scientist.
 \end{itemize}
 
 \subsection*{\textbf{Geoscientists Encouraging Openness and Diversity in the Earth Sciences} \hfill 2019 – 2020}
-\textbf{(GEODES)} \hspace{3pt} \textit{Student Leader}
+\textit{Graduate Student Leader}
 \begin{itemize}
-	\item Organize and implement outreach events centered on promoting awareness of issues facing underrepresented groups in the geosciences and cultivating a culture of inclusivity in the UCSC Earth \& Planetary Sciences Dept.
+	\item (abbreviated \textbf{GEODES}) a student-run group in the UCSC Earth \& Planetary Sciences Department.
+	\item Organized and implemented outreach events centered on promoting underrepresented groups in the geosciences and cultivating a culture of inclusivity within the department.
 	\item One of six graduate student leaders responsible for the operation and development of GEODES.
 \end{itemize}
 
@@ -172,30 +169,68 @@ In addition to my research interests, I am dually committed to the inclusion, su
 \textit{Curatorial Intern}
 \begin{itemize}
 	\item Developed outreach programming and exhibit content.
-	\item Supplemented undergraduate courses with lectures drawing on museum collections.
+	\item Supplemented undergraduate courses with lectures and discussions drawing on museum collections.
 	\item Mentored and trained undergraduate student interns and employees.
 \end{itemize}
 
 \subsection*{\textbf{Museum of the Rockies} \hspace{15pt} Bozeman, MT, U.S.A. \hfill 2015}
 \textit{Security Volunteer}
 \begin{itemize}
-	\item Answered visitors' questions and facilitating interpretive discussions about natural history exhibits.
-%	\item Enforced museum rules as an introductory volunteer (docents required multi-year training).
+	\item Answered visitors' questions and facilitated interpretive discussions about natural history exhibits.
 \end{itemize}
 
 %-------------------------------------------
-%	ADDITIONAL SERVICES, EXPERIENCES
+%	INVITED TALKS
+%-------------------------------------------
+
+\section*{INVITED TALKS}
+
+\begin{etaremune} [itemsep=4pt, leftmargin=3ex]
+
+   \item \textbf{Massachusetts Institute of Technology} $|$
+   Planetary Lunch Seminar, 3 May 2022. \\
+  Title:~\textit{The early history of the LL chondrite parent planetesimal}
+
+  \item \textbf{Princeton University} $|$ 
+  Environmental Geology and Geochemistry Seminar, 31 March 2022. \\
+  Title:~\textit{Peering beneath the northern Laurentide ice sheet during the last glacial maximum}
+  
+\end{etaremune}
+\vspace{-12pt}
+%-------------------------------------------
+%	ACADEMIC SERVICES, EXPERIENCES
 %-------------------------------------------
 
 \section*{ACADEMIC SERVICE \& EXPERIENCE}
 
 \subsection*{\textbf{Mentored Undergraduates}}
+\subsubsection*{Dartmouth College}
 \begin{itemize}
-		\item Cosmo Varah-Sikes, (2019-2021), thesis (2021)
-		\item Linh Phan (2020)
-		\item Michael Scudder (2018-2020), thesis (2020)
-		\item Alexander Levinson (2018)
-		\item Paul Colosi (2017-2018)
+	\item Cameron Stewart (2022)
+\end{itemize}
+
+\subsubsection*{University of California Santa Cruz}
+\begin{itemize}
+	\item Cosmo Varah-Sikes (2019-2021), thesis (2021)
+	\item Linh Phan (2020)
+	\item Michael Scudder (2018-2020), thesis (2020)
+	\item Alexander Levinson (2018)
+	\item Frances O'Byrne (2018)
+	\item Paul Colosi (2017-2018)
+\end{itemize}
+
+\subsection*{\textbf{Departmental Service}}
+\subsubsection*{Department of Earth Sciences, Dartmouth}
+Earth \& Planetary History Journal Club --- Organizer 	 \hfill	Spring 2022
+\begin{itemize}
+	\item Scheduled, coordinated, and oversaw reading group spanning multi-disciplinary topics.
+\end{itemize}
+
+\subsubsection*{Department of Earth \& Planetary Sciences, UCSC}
+Whole Earth Seminar --- Organizer \hfill  Spring 2019
+\begin{itemize}
+	\item One of two graduate student organizers that coordinated a departmental seminar series.
+	\item Contacted and scheduled speakers from diverse disciplines in Earth and planetary sciences.
 \end{itemize}
 
 \subsection*{\textbf{Laboratory Research \& Management}}
@@ -204,13 +239,12 @@ Analytical Experience:
 		\item \textit{Expert:} TIMS
 		\item \textit{Proficient:} MC-ICP-MS, ICP-MS, SEM-EDS
 		\item \textit{Limited:} ICP-OES, XRF, XRD
-	\end{itemize} \vspace{2ex}
-	
+	\end{itemize} \vspace{1ex}	
  \textit{W.M. Keck Isotope Facility}, UCSC \hfill 2016 -- 2021\\
 Under the advisorship of lab director Prof. Terry Blackburn, I was partially responsible for the operation and maintenance of this multi-user clean lab facility, including:
 	\begin{itemize} 
 	\item Maintenance and operation of mass spectrometers and wet chemistry labs.
-	\item Training and supporting researchers in wet chemistry and mass spectrometric methods.
+	\item Training and supporting researchers in chemical and mass spectrometric methods.
 	\item Preparation, measurement, and reporting of isotopic analyses of geologic and biomineral material for external contracts.
 	\item Procurement and preparation of lab consumables.
 	\end{itemize}
@@ -220,36 +254,33 @@ Under the advisorship of lab director Prof. Terry Blackburn, I was partially res
 	\item 2017 AGU Fall Meeting $|$ Co-Chair/Co-Convener: \textit{Applications of Thermochronology to Understand Crustal Systems}
 \end{itemize}
 
-\subsection*{\textbf{Seminars \& Talks}}
-\textit{Whole Earth Seminar Organizer}, Department of Earth \& Planetary Sciences, UCSC \hfill  Spring 2019
-\begin{itemize}
-	\item One of two graduate student organizers that coordinated a departmental seminar series.
-	\item Contacted and scheduled speakers from diverse disciplines in Earth and planetary sciences.
-\end{itemize}
-
 \vspace{2ex}
 \begin{hangparas}{5ex}{1}
-	\textbf{Reviewer for:} \textit{Geochronology}
+	\textbf{Reviewer for:} \textit{Geochronology}, \textit{Geology}
 
 	\vspace{2ex}
-	\textbf{Society Affiliations:} Meteoritical Society, American Astronomical Society, Geochemical Society, Geological Society of America, American Geophysical Union.
+	\textbf{Society Affiliations:} Meteoritical Society, American Astronomical Society, Geochemical Society, National Association of Geoscience Teachers, Geological Society of America, American Geophysical Union.
 \end{hangparas}
 
 %-------------------------------------------
 %	FUNDING
 %-------------------------------------------
-\iffalse
-\section*{FUNDING}
-\subsection*{\textbf{Current}}
-\textbf{National Science Foundation} \hfill 2021 -- 2024\\
-\textit{Astronomy \&\ Astrophysics Postdoctoral Fellowship}
-\begin{itemize}
-	\item[] Award \#\ 2102591
-	\item[] ``Planetesimal formation, giant planet migration, and stellar accretion in our solar system and beyond"
-	\end{itemize}
 
-\subsection*{\textbf{Prior}}
-\fi
+\section*{FUNDING}
+\subsection*{\textbf{Current~/~Active}}
+\begin{itemize}[leftmargin=0pt,label={},itemsep=1ex]
+\item National Science Foundation --- Astronomy \&\ Astrophysics Postdoctoral Fellowship \hfill 2021 -- 2024 \\
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2102591&HistoricalAwards=false}{Award \#2102591}
+\end{itemize}
+
+\subsection*{\textbf{Prior~/~Inactive}}
+%\begin{tabbing} \hspace{40ex} \= \hspace{25ex} \= \` \hspace{25ex}    \kill \hspace{25ex} 
+\begin{itemize} [leftmargin=0pt,label={},itemsep=1ex]
+\item ARCS Foundation --- Scholar Award (Fellowship) \hfill 2020 -- 2021
+\item University of California Santa Cruz  --- Regent’s Fellowship \hfill 2016 – 2017
+\item Bowdoin College --- Grua/O’Connell Research Award  \hfill 2013
+\item Bowdoin College --- Freedman Summer Research Fellowship in Coastal/Environmental Studies \hfill 2012
+\end{itemize}
 
 %-------------------------------------------
 %	AWARDS & HONORS
@@ -258,18 +289,15 @@ Under the advisorship of lab director Prof. Terry Blackburn, I was partially res
 \section*{AWARDS \& HONORS}
 
 \begin{itemize} [leftmargin=0pt,label={},itemsep=1ex]
-	\item ARCS Foundation Scholar Award (Fellowship) \hfill 2020 – 2021
 	\item UCSC Earth \& Planetary Sciences Outstanding TA Award (Honorable Mention) \hfill 2020
 	\item Aaron and Elizabeth Waters Award  \hfill 2019
 	\begin{itemize} [label={}, rightmargin=30ex]
 	\item \textit{Issued annually for the most outstanding proposal for PhD research in the UCSC Department of Earth \& Planetary Sciences}
 	\end{itemize}
-	\item UC Santa Cruz Regent’s Fellowship \hfill 2016 – 2017
 	\item National Association of Geoscience Teachers Outstanding TA Award \hfill 2014
-	\item Grua/O’Connell Research Award  \hfill 2013
-	\item Freedman Summer Research Fellowship in Coastal/Environmental Studies \hfill 2012
 %	\item Sarah and James Bowdoin Scholar (Dean’s List) \hfill 2011 – 2013
 \end{itemize}
+
 
 %-------------------------------------------
 %	CONFERENCE TALK/POSTER
@@ -294,7 +322,7 @@ Under the advisorship of lab director Prof. Terry Blackburn, I was partially res
 %-----------------------------------------------------
 % 	ADDITIONAL WORK EXPERIENCE
 %-----------------------------------------------------
-\begin{center}{\rule{2.5in}{0.5pt}}\end{center}  \begin{center}{\rule{2.5in}{0.5pt}}\end{center}
+\begin{center}{\rule{2.5in}{0.5pt}}\end{center}  \begin{center}\vspace{-12pt} {\rule{2.5in}{0.5pt}}\end{center}
 	
 \subsection*{\textbf{Additional Work Experience}}
 \begin{itemize}[label={}]
