@@ -9,26 +9,24 @@
 %-------------------------------------------
 
 \documentclass[10pt]{article}
-\usepackage{geometry}\geometry{letterpaper,margin=1in}
+\usepackage[letterpaper,margin=1in]{geometry}
 
-\usepackage{etaremune}
+\usepackage{etaremune} % backwards enumeration
 
-\usepackage{enumitem}
+\usepackage{enumitem} % for itemize and enumerate layout control
 	\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=5ex}
 
 \usepackage{hyperref} \usepackage[dvipsnames]{xcolor} \definecolor{linkcolor}{rgb}{0.0, 0.25, 0.42} \hypersetup{colorlinks=true, urlcolor=linkcolor}
 	%set link color to a lovely indigo dye.
-	
-\usepackage{adforn}
 
-\usepackage{hanging} % Hanging paragraphs for minor lists.
+\usepackage{hanging} % Hanging paragraphs for in-line lists.
 
 \usepackage{fancyhdr} \usepackage{lastpage}
     \renewcommand{\headrulewidth}{0pt}
     \cfoot{G.H. Edwards \hspace{8pt}  \thepage \hspace{1pt} / \pageref*{LastPage}}
     \pagestyle{fancy}
 
-\usepackage{titlesec}
+\usepackage{titlesec} % format sections 
 	\titleformat*{\section}{\centering\bfseries}
 	\titlespacing*{\section}{0ex}{3em}{1em}
 	\titleformat*{\subsection}{\normalsize} %NOT \bfseries for right-aligned timeframes
@@ -36,11 +34,13 @@
 	\titleformat*{\subsubsection}{\normalsize\itshape}
 	\titlespacing*{\subsubsection}{0ex}{1ex}{.5ex}
 
-\renewcommand\labelitemi{\boldmath$\cdot$}
+\renewcommand\labelitemi{\boldmath$\cdot$} % Use a small dot for itemized lists
+
+\renewcommand{\arraystretch}{1.2} % Add a little extra space between rows of tabular environments
 
 \newcommand{\ghedwards}{\textbf{G.H. Edwards}}
 
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} % No indentation for all text
 
 \begin{document}
 % NAME
@@ -66,7 +66,7 @@ Hanover, NH, 03755, U.S.A.	\hfill \textit{Website:} \href{https://grahamedwards.
 
 % PUBLICATIONS
 \input{sect/pubs.tex}
-\vspace*{2em}
+
 
 % TEACHING
 \input{sect/teaching.tex}
@@ -85,6 +85,7 @@ Hanover, NH, 03755, U.S.A.	\hfill \textit{Website:} \href{https://grahamedwards.
 
 % AWARDS & HONORS
 \input{sect/awards.tex}
+\vspace*{2em}
 
 % CONFERENCE TALK/POSTER
 \input{sect/abstracts.tex}
