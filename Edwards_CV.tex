@@ -30,9 +30,9 @@
 	\titleformat*{\section}{\centering\bfseries}
 	\titlespacing*{\section}{0ex}{3em}{1em}
 	\titleformat*{\subsection}{\normalsize} %NOT \bfseries for right-aligned timeframes
-	\titlespacing*{\subsection}{0ex}{2ex}{.2ex}
+	\titlespacing*{\subsection}{-1ex}{2ex}{1ex}
 	\titleformat*{\subsubsection}{\normalsize\itshape}
-	\titlespacing*{\subsubsection}{0ex}{1ex}{.5ex}
+	\titlespacing*{\subsubsection}{-1ex}{2ex}{.5ex}
 
 \renewcommand\labelitemi{\boldmath$\cdot$} % Use a small dot for itemized lists
 
@@ -40,6 +40,7 @@
 
 \newcommand{\ghedwards}{\textbf{G.H. Edwards}}
 \newcommand{\ongoing}{~\textrightarrow~}
+\newcommand{\lineitem}[2]{\subsection*{\textbf{#1}\hfill #2}}
 
 \setlength{\parindent}{0pt} % No indentation for all text
 
