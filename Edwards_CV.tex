@@ -28,14 +28,18 @@
 
 \usepackage{titlesec} % format sections 
 	\titleformat*{\section}{\centering\bfseries}
+	\titleformat{\section}{\centering\bfseries}{}{0pt}{}
 	\titlespacing*{\section}{0ex}{3em}{1em}
+
+	\titleformat{\subsection}{\normalsize}{}{0pt}{}
 	\titleformat*{\subsection}{\normalsize} %NOT \bfseries for right-aligned timeframes
 	\titlespacing*{\subsection}{-1ex}{2ex}{1ex}
+	
+	\titleformat{\subsubsection}{\normalsize\itshape}{}{0pt}{}
 	\titleformat*{\subsubsection}{\normalsize\itshape}
 	\titlespacing*{\subsubsection}{-1ex}{2ex}{.5ex}
 
 \renewcommand\labelitemi{\boldmath$\cdot$} % Use a small dot for itemized lists
-
 \renewcommand{\arraystretch}{1.2} % Add a little extra space between rows of tabular environments
 
 \newcommand{\ghedwards}{\textbf{G.H. Edwards}}
