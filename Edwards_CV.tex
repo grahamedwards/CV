@@ -12,14 +12,11 @@
 \usepackage[letterpaper,margin=1in]{geometry}
 
 \usepackage{etaremune} % backwards enumeration
-
 \usepackage{enumitem} % for itemize and enumerate layout control
 	\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=5ex}
-
-\usepackage{hyperref} \usepackage[dvipsnames]{xcolor} \definecolor{linkcolor}{rgb}{0.0, 0.25, 0.42} \hypersetup{colorlinks=true, urlcolor=linkcolor}
-	%set link color to a lovely indigo dye.
-
 \usepackage{hanging} % Hanging paragraphs for in-line lists.
+\usepackage{hyperref} 
+\usepackage{xcolor} \definecolor{linkcolor}{rgb}{0.0, 0.25, 0.42} \hypersetup{colorlinks=true, urlcolor=linkcolor} %set link color to a lovely indigo dye.
 
 \usepackage{fancyhdr} \usepackage{lastpage}
     \renewcommand{\headrulewidth}{0pt}
@@ -36,18 +33,23 @@
 	\titleformat*{\subsection}{\normalsize} %NOT \bfseries for right-aligned timeframes
 	\titlespacing*{\subsection}{-1ex}{2ex}{1ex}
 	
-	\titleformat{\subsubsection}{\normalsize\itshape}{}{0pt}{}
-	\titleformat*{\subsubsection}{\normalsize\itshape}
+	\titleformat{\subsubsection}{\normalsize}{}{0pt}{}
+	\titleformat*{\subsubsection}{\normalsize}
 	\titlespacing*{\subsubsection}{-1ex}{2ex}{.5ex}
 
+% Reformat some settings
+\setlength{\parindent}{0pt} % No indentation for all text
 \renewcommand\labelitemi{\boldmath$\cdot$} % Use a small dot for itemized lists
 \renewcommand{\arraystretch}{1.2} % Add a little extra space between rows of tabular environments
 
+
+%-------------------------------------------
+%	CUSTOM COMMANDS
+%-------------------------------------------
 \newcommand{\ghedwards}{\textbf{G.H. Edwards}}
 \newcommand{\ongoing}{~\textrightarrow~}
-\newcommand{\lineitem}[2]{\subsection*{\textbf{#1}\hfill #2}}
-
-\setlength{\parindent}{0pt} % No indentation for all text
+\newcommand{\lineitem}[2][]{\subsection*{\textbf{#2}\hfill #1}}
+\newcommand{\subline}[2][]{\subsubsection*{\textit{#2}\qquad #1}}
 
 \begin{document}
 % NAME
@@ -61,9 +63,6 @@
 Earth Sciences, Physics \& Astronomy \hfill Graham.H.Edwards{\small @dartmouth.edu} \\
 Dartmouth College \hfill +1~920~559~2279  \\
 Hanover, NH, U.S.A.	\hfill \textit{Office:}~209 Fairchild Hall
-%\begin{tabular}{@{}p{.7\textwidth} p{.3\textwidth}@{}}
-
-%\end{tabular}
 
 \vspace{1em}
 %-------------------------------------------
