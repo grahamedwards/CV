@@ -7,4 +7,4 @@ If you're new to LaTeX and/or have questions, you can open an [issue](https://gi
 
 ---
 
-Formatting inspired by the Rensselaer Polytechnic Institute resume style (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+Formatting inspired by the [Rensselaer Polytechnic Institute resume styles](http://www.rpi.edu/dept/arc/training/latex/resumes/)
