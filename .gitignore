@@ -1,9 +1,9 @@
 .DS_Store
-Edwards_CV.aux
-Edwards_CV.log
-Edwards_CV.out
-Edwards_CV.synctex.gz
+*.aux
+*.log
+*.out
+*.synctex.gz
 CV_old
-Edwards_CV.fdb_latexmk
-Edwards_CV.fls 
+*.fdb_latexmk
+*.fls 
 .vscode
