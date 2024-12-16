@@ -26,8 +26,7 @@
 	\pagestyle{fancy}
 	
 \usepackage{titlesec} % format sections 
-	\titleformat*{\section}{\centering\bfseries}
-	\titleformat{\section}{\centering\bfseries}{}{0pt}{}
+	\titleformat{\section}{\centering\bfseries\uppercase}{}{0pt}{}
 	\titlespacing*{\section}{0ex}{3em}{1em}
 
 	\titleformat{\subsection}{\normalsize}{}{0pt}{}
@@ -66,7 +65,6 @@ Earth \& Environmental Geosciences \hfill gedward1~@~trinity.edu \\
 Trinity University \hfill +1~920~559~2279  \\
 San Antonio, TX, U.S.A.	\hfill 236 Marrs McLean Hall
 
-\vspace{1em}
 %-------------------------------------------
 
 % APPOINTMENTS
@@ -85,16 +83,24 @@ San Antonio, TX, U.S.A.	\hfill 236 Marrs McLean Hall
 \input{sect/teaching.tex}
 %\vspace*{2em}
 
+% DEPARTMENTAL SERVICE
+\input{sect/dept-service.tex}
+
+% INSTITUTIONAL SERVICE
+\input{sect/inst-service.tex}
+
+% ACADEMIC SERVICE
+\input{sect/academic-service.tex}
+
 % OUTREACH
 \input{sect/outreach.tex}
 %\vspace*{2em}
 
+% EXPERTISE
+\input{sect/expertise.tex}
+
 % INVITED TALKS
 \input{sect/talks.tex}
-%\vspace*{2em}
-
-% ACADEMIC SERVICES, EXPERIENCES
-\input{sect/service.tex}
 %\vspace*{2em}
 
 % FUNDING
