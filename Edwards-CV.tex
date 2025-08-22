@@ -7,7 +7,7 @@
 %-------------------------------------------
 %	PACKAGES & CONFIGURATIONS
 %-------------------------------------------
-\DocumentMetadata{lang=en,pdfversion=2.0,pdfstandard=ua-2,pdfstandard=a-4,testphase=latest}\tagpdfsetup{math/mathml/luamml/load=false}
+\DocumentMetadata{lang=en,pdfversion=2.0,pdfstandard=ua-2,pdfstandard=a-4f,testphase=latest}\tagpdfsetup{math/mathml/luamml/load=false}
 \documentclass[10pt]{article}
 \usepackage[letterpaper,margin=1in]{geometry}
 
@@ -21,7 +21,7 @@
 
 \usepackage{fancyhdr} \usepackage{lastpage}
     \renewcommand{\headrulewidth}{0pt}
-    \cfoot{G.H. Edwards \hspace{8pt}  \thepage \hspace{1pt} / \pageref*{LastPage}}
+    \cfoot{G.H.~Edwards \quad  \thepage~/~\pageref*{LastPage}}
     \fancyhead{} %remove headers
 	\pagestyle{fancy}
 	
@@ -46,7 +46,7 @@
 %-------------------------------------------
 %	CUSTOM COMMANDS
 %-------------------------------------------
-\newcommand{\ghedwards}{\textbf{G.H. Edwards}}
+\newcommand{\ghedwards}{\textbf{G.H.~Edwards}}
 \newcommand{\ongoing}{~\textrightarrow~}
 \newcommand{\lineitem}[2][]{\subsection*{\textbf{#2}\hfill #1}}
 \newcommand{\subline}[2][]{\subsubsection*{\textit{#2}\qquad #1}}
@@ -63,7 +63,7 @@
 \begin{document}
 % NAME
 \begin{center}
-\LARGE\textbf{\underline{Graham Harper Edwards}}\\ [.3em]
+\LARGE\textbf{\underline{Graham Harper Edwards}}\\[.3em]
 \large ---~~he, him~~---
 \end{center}
 
